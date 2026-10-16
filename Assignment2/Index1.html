@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asynchronous Synchronous</h1>
+    <script>
+        console.log("Synchronous")
+        setTimeout(()=>{
+            console.log("SetTimeout Interval")
+        },2000)
+
+        const proms = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("Promise Execution")
+            },1000)
+        })
+        proms
+        .then((result)=>{
+            console.log(result)
+        })
+        
+        let count = 0;
+        let interval = setInterval(()=>{
+           count++;
+           console.log(`Interval Execution`)
+           if(count === 5){
+            clearInterval((interval))
+           } 
+        },1000)
+        
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fetching The Data</h1>
+    <div></div>
+    <script>
+        fetch("API https://jsonplaceholder.typicode.com/users")
+        .then((response)=>JSON.response())
+        .then((resolve)=>{
+            return resolve;
+        })
+
+    </script>
+</body>
+</html>
+
+<!-- GET -- Get Method is Used to Getting the data from server.
+Post -- Post Method is used to Add the data to the server
+PUT -- PUT Method is used to Update the record from the server
+PATCh -- PATCH is used to Update the Particular Part of a Record from the server
+Delete HTTP -- Delete is used to remove the Records From the Server. 
+-->

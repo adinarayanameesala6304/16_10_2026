@@ -1,0 +1,38 @@
+#container{
+    box-sizing: border-box;
+    background-color: bisque;
+    color: black;
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+    padding: 0px;
+    border-radius: 20px;
+}
+#hv1{
+    height: 100px;
+    background:palevioletred ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#para1{
+    padding: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif
+}
+#btn1{
+    background: royalblue;
+    color: white;
+    width: 50px;
+    border-radius: 5px;
+}
+#btn1:hover{
+    background: tomato;
+    color: black;
+}
+#btn2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
